@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <h1>Температура</h1>
+        <h2>
+        <script>
+            "use strict";
+            let tempC = parseFloat( prompt('Введите температуру (C):', 15) );
+
+            let tempF = tempC * 9 / 5 + 32;
+
+            let result = Math.round(100 * tempF) / 100;
+
+            document.write ( result );
+
+
+
+        </script>
+        </h2>
+
+    </body>
+</html>
