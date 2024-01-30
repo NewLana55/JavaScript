@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <h1>Вороны</h1>
+        <h2>
+        <script>
+            "use strict";
+
+			let n = parseInt( prompt("Введите число ворон:", "") );
+
+            let v;
+            let n2 = n % 100;
+
+            if ( (n2 >= 11) && (n2 <= 14))
+                v = 'ворон';
+            else 
+            {
+                switch( n % 10 ) {
+                    case 1: v = 'ворона'; break;
+                    case 2:
+                    case 3:
+                    case 4: v = 'вороны'; break;
+                    default : v = 'ворон'; break;
+                }
+            }
+
+            let result = `На ветке ${n} ${v}`;
+
+            alert(result);
+
+        </script>
+        </h2>
+
+    </body>
+</html>
