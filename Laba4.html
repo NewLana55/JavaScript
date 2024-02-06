@@ -1,0 +1,46 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Цикл + цвет</h1>
+		<h2 >
+            <script>
+                for(let i=1; i <= 10; i++) {
+                    if (i == 3) continue;
+                    if (i == 8) break;
+                    console.log(i);
+                }
+
+
+                let rows = parseInt( prompt ('Число строк: ', 10));
+                let cols = parseInt( prompt ('Число колонок: ', 10));
+
+                document.write('<table border=1>');
+                for(let i = 1; i <= rows; i++) {
+                    document.write('<tr>');
+                    for(let j = 1; j <= cols; j++) {
+                        if ( (i == 1) || (j == 1) )
+                            document.write('<td style="background:red">');
+                        else
+                            document.write('<td>');
+                        document.write(i*j);
+                        document.write('</td>');
+                    }
+                    document.write('</tr>');
+                }
+                    
+
+                document.write('</table>');
+
+		    </script>
+		</h2>
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+	</body>
+
+</html>

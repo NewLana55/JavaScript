@@ -1,0 +1,50 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Цикл + цвет + метка</h1>
+		<h2 >
+            <script>
+
+                let rows = 10; 
+                let cols = 10; 
+
+                document.write('<table border=1>');
+            abc:
+                for(let i = 1; i <= rows; i++) {
+                    document.write('<tr>');
+                    for(let j = 1; j <= cols; j++) {
+                        if (j == 6) break abc;
+                        document.write('<td>');
+                        document.write(i*j);
+                        document.write('</td>');
+                    }
+                    document.write('</tr>');
+                }
+                    
+
+                document.write('</table>');
+
+                for(let i=0; i < 10; i++) {
+                    console.log(i);
+                }
+
+                let userName = "Leonid";
+                for(let i = userName.length - 1; i >= 0; i--) {
+                    let ch = userName.charAt(i);
+                    console.log(ch);
+                }
+                    
+
+		    </script>
+		</h2>
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+	</body>
+
+</html>
