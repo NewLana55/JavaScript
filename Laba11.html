@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <h1>Имена</h1>
+        <h2>
+        <script>
+            "use strict";
+
+            var names = [];
+            do {
+                var userName = prompt('Введите имя:', '');
+                if (userName)
+                    names.push(userName);
+            } while(userName);
+
+            names.sort();
+            for(var i in names) {
+                document.write(names[i]);
+                document.write('<br>');
+            }
+
+
+        </script>
+        </h2>
+
+    </body>
+</html>

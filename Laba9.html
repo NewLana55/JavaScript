@@ -1,0 +1,40 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Объект ссылка</h1>
+		<h2 >
+            <script>
+                "use strict";
+
+                function showLink() {
+                        document.write(`<a href="${this.url}" target=_blank>${this.title}</a>&nbsp;`);
+                         }
+
+                let link1 = {};
+                link1.title = "Специалист";
+                link1.url = "https://www.specialist.ru";
+                link1.print = showLink;
+
+ 
+                let link2 = {};
+                link2.title = "Яндекс";
+                link2.url = "https://www.yandex.ru";
+                link2.print = showLink;        
+                
+                link1.print();
+                link2.print();
+
+
+
+                
+
+
+		    </script>
+		</h2>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Объекты ссылки классы</h1>
+		<h2 >
+            <script>
+                "use strict";
+
+                class Link {
+                    constructor(title, url) {
+                        this.title = title;
+                        this.url = url;
+                        
+                    }
+                    print (openInNewWindow) {
+                        if (openInNewWindow)
+                            document.write(`<a href="${this.url}" target=_blank>${this.title}</a>&nbsp;`);
+                        else
+                            document.write(`<a href="${this.url}">${this.title}</a>&nbsp;`);
+                    }
+                }
+
+               
+
+                let link1 = new Link("Специалист", "https://www.specialist.ru");
+                let link2 = new Link("Яндекс", "https://www.yandex.ru"); 
+                link2.url = 'https://www.google.com';       
+                
+                link1.print(true);
+                link2.print();
+         
+
+		    </script>
+		</h2>
+
+
+	</body>
+
+</html>

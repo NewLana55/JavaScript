@@ -1,0 +1,46 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Объекты ссылки json</h1>
+		<h2 >
+            <script>
+                "use strict";
+
+                var showLink = function (openInNewWindow) {
+                    if (openInNewWindow)
+                        document.write(`<a href="${this.url}" target=_blank>${this.title}</a>&nbsp;`);
+                    else
+                        document.write(`<a href="${this.url}">${this.title}</a>&nbsp;`);
+                }
+
+                let link1 = {
+                    title   : "Специалист",
+                    url     : "https://www.specialist.ru",
+                    print   :  showLink
+                };
+
+                let link2 = {
+                    title   : "Яндекс",
+                    url     : "https://www.yandex.ru",
+                    print   : showLink
+
+                };
+      
+                
+                link1.print(true);
+                link2.print();
+
+
+
+                
+
+
+		    </script>
+		</h2>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<h1>Функции</h1>
+		<h2 >
+            <script>
+                "use strict";
+                
+                
+                function gcd(k1, k2) 
+                {
+                    let k3;
+                    while ( (k3 = k1 % k2) != 0 ) {
+                        k1 = k2;
+                        k2 = k3;
+                    }
+                    return k2;
+                }
+                             
+                console.log( gcd(1071, 462) );
+                console.log( gcd(462, 1071) );
+
+		    </script>
+		</h2>
+
+
+	</body>
+
+</html>
